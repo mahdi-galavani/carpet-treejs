@@ -1,0 +1,1273 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1b1310">
+<title>خانه فرش | فروشگاه آنلاین فرش دستباف ایرانی</title>
+<meta name="description" content="خرید آنلاین فرش دستباف ایرانی؛ مجموعه تبریز، هریس، اردبیل. ضمانت اصالت، ارسال بیمه‌شده و پرداخت امن.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&family=Markazi+Text:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f1e6;--surface:#fffdf8;--ink:#241a14;--ink2:#4a3a2c;--muted:#8b7a66;
+  --line:#e6d9c5;--wine:#6d1a24;--gold:#b98a4b;--gold2:#d9b878;--gold-soft:#f0e2c9;
+  --dark:#1b1310;--dark2:#2a1e18;--ok:#2f7a52;
+  --shadow:0 18px 40px rgba(58,40,24,.10);
+  --radius:18px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Vazirmatn,Tahoma,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+input,select,textarea{font:inherit}
+::selection{background:var(--gold2);color:#241a14}
+.wrap{max-width:1280px;margin:auto;padding:0 24px}
+
+/* ---------- top line ---------- */
+.topline{background:var(--dark);color:#cbbaa2;font-size:11px}
+.topline .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:9px;padding-bottom:9px}
+.topline a{color:var(--gold2)}
+.topline span{display:flex;align-items:center;gap:6px}
+
+/* ---------- header ---------- */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(247,241,230,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;gap:22px;padding-top:13px;padding-bottom:13px}
+.brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.brand-mark{width:46px;height:46px;border-radius:13px;background:linear-gradient(145deg,#2b1f18,#150f0c);color:var(--gold2);display:grid;place-items:center;font-family:'Markazi Text',serif;font-size:24px;box-shadow:inset 0 0 0 1px rgba(217,184,120,.35),0 8px 18px rgba(40,25,15,.22)}
+.brand b{display:block;font-size:15px;letter-spacing:-.2px}
+.brand small{display:block;font-size:9.5px;color:var(--muted);margin-top:3px}
+.nav{display:flex;gap:20px;font-size:13px;font-weight:500;color:var(--ink2)}
+.nav a{position:relative;padding:7px 0;transition:.2s}
+.nav a::after{content:'';position:absolute;bottom:2px;right:0;height:2px;width:0;background:var(--gold);transition:.3s;border-radius:2px}
+.nav a:hover{color:var(--gold)}
+.nav a:hover::after{width:100%}
+.search{position:relative;flex:1;max-width:330px;margin-right:auto}
+.search input{width:100%;padding:11px 40px 11px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-size:12.5px;outline:none;transition:.25s;color:var(--ink)}
+.search input::placeholder{color:#b0a08c}
+.search input:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(185,138,75,.13)}
+.search .ico{position:absolute;top:50%;right:14px;transform:translateY(-50%);color:var(--muted);font-size:13px;pointer-events:none}
+.acts{display:flex;align-items:center;gap:9px;flex:0 0 auto}
+.icon-btn{width:46px;height:46px;border-radius:13px;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center;position:relative;transition:.25s;font-size:17px}
+.icon-btn:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-1px)}
+.cart-count{position:absolute;top:-7px;left:-7px;min-width:21px;height:21px;border-radius:999px;background:var(--wine);color:#fff;font-size:10px;display:grid;place-items:center;padding:0 5px;box-shadow:0 3px 8px rgba(109,26,36,.4)}
+.menu-btn{display:none}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 24px;border-radius:13px;font-size:13px;font-weight:600;transition:.25s;white-space:nowrap;border:1px solid transparent}
+.btn-gold{background:linear-gradient(145deg,#d2a45c,#a97b3c);color:#20160f;box-shadow:0 12px 26px rgba(169,123,60,.30)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(169,123,60,.42)}
+.btn-dark{background:var(--dark);color:#f4e9d8}
+.btn-dark:hover{background:#31231b;transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(255,255,255,.28);color:#f2e8d8}
+.btn-ghost:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.5)}
+.btn-outline{border-color:var(--line);background:var(--surface);color:var(--ink)}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none!important}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:radial-gradient(1100px 620px at 88% -15%,#402e22 0%,#1e1611 52%,#140e0b 100%);color:#f7ecdd;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;opacity:.35;background-image:radial-gradient(circle at 1px 1px,rgba(217,184,120,.16) 1px,transparent 0);background-size:26px 26px;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;padding-top:68px;padding-bottom:78px}
+.pill{display:inline-flex;align-items:center;gap:8px;background:rgba(217,184,120,.12);border:1px solid rgba(217,184,120,.32);color:var(--gold2);font-size:11px;padding:7px 14px;border-radius:999px}
+.hero h1{font-family:'Markazi Text',Vazirmatn,serif;font-size:clamp(38px,5.2vw,66px);line-height:1.18;font-weight:700;margin:22px 0 16px;letter-spacing:-1px}
+.hero h1 em{font-style:normal;color:var(--gold2)}
+.hero p{font-size:13.5px;line-height:2.3;color:#c2b19d;max-width:430px;margin:0 0 28px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-stats{display:flex;gap:34px;margin-top:44px;padding-top:26px;border-top:1px solid rgba(255,255,255,.1);flex-wrap:wrap}
+.hero-stats div b{display:block;font-size:22px;color:var(--gold2);font-family:'Markazi Text',serif}
+.hero-stats div small{font-size:10.5px;color:#9a8a76}
+.hero-visual{position:relative;display:grid;place-items:center;min-height:430px}
+.hero-frame{width:min(320px,74%);aspect-ratio:3/4;border-width:13px;transform:rotate(-3deg);animation:float 7s ease-in-out infinite;box-shadow:0 40px 70px rgba(0,0,0,.6),0 0 0 26px rgba(201,164,104,.05);z-index:2}
+.hero-frame::before,.hero-frame::after{display:none}
+@keyframes float{50%{transform:rotate(-3deg) translateY(-14px)}}
+.hero-float{position:absolute;background:rgba(255,253,248,.97);color:var(--ink);border-radius:14px;padding:10px 15px;font-size:11px;font-weight:600;box-shadow:0 18px 34px rgba(0,0,0,.34);display:flex;align-items:center;gap:8px;z-index:3}
+.hero-float small{display:block;font-weight:400;font-size:9.5px;color:var(--muted);margin-top:2px}
+.f1{top:8%;left:0}
+.f2{bottom:12%;right:0}
+.hero-glow{position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(201,164,104,.22),transparent 65%);filter:blur(10px)}
+
+/* ---------- trust ---------- */
+.trust{background:var(--surface);border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding-top:22px;padding-bottom:22px}
+.trust-item{display:flex;align-items:center;gap:12px}
+.trust-item i{width:42px;height:42px;border-radius:12px;background:var(--gold-soft);display:grid;place-items:center;color:#8a6529;font-size:18px;font-style:normal;flex:0 0 auto}
+.trust-item b{display:block;font-size:12.5px}
+.trust-item small{display:block;color:var(--muted);font-size:10.5px;margin-top:2px}
+
+/* ---------- sections ---------- */
+.sec{max-width:1280px;margin:auto;padding:72px 24px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;margin-bottom:30px;flex-wrap:wrap}
+.eyebrow{font-size:10.5px;letter-spacing:.14em;color:var(--gold);display:flex;align-items:center;gap:9px;font-weight:700}
+.eyebrow i{width:22px;height:1px;background:var(--gold);display:block}
+.sec-head h2{font-family:'Markazi Text',Vazirmatn,serif;font-size:clamp(26px,3.4vw,40px);margin:10px 0 0;font-weight:700;line-height:1.3}
+.sec-head p{font-size:12px;color:var(--muted);margin:8px 0 0;line-height:2}
+
+/* ---------- rug visual ---------- */
+.rug{position:relative;border:7px solid #c9a468;outline:1px solid #6d4c28;background-color:#7a1d28;box-shadow:0 14px 26px rgba(60,40,20,.28);border-radius:2px}
+.rug::before,.rug::after{content:'';position:absolute;left:3%;right:3%;height:9px;background:repeating-linear-gradient(90deg,#c9a468 0 1.6px,transparent 1.6px 5px);opacity:.95}
+.rug::before{top:-17px}
+.rug::after{bottom:-17px}
+
+/* ---------- categories ---------- */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cat{position:relative;border-radius:var(--radius);overflow:hidden;min-height:186px;display:flex;align-items:flex-end;padding:17px;color:#fff;box-shadow:var(--shadow);cursor:pointer;isolation:isolate;text-align:right}
+.cat::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,8,.05) 25%,rgba(20,12,8,.88));z-index:1}
+.cat-bg{position:absolute;inset:0;z-index:0;transform:scale(1.12);transition:transform .6s ease}
+.cat:hover .cat-bg{transform:scale(1.25)}
+.cat span{position:relative;z-index:2;font-weight:700;font-size:14px}
+.cat small{display:block;font-size:10.5px;opacity:.78;font-weight:400;margin-top:4px}
+
+/* ---------- showroom stage ---------- */
+.stage-wrap{background:var(--dark);border-radius:26px;padding:14px;box-shadow:0 30px 65px rgba(30,18,10,.28)}
+.stage{height:440px;position:relative;overflow:hidden;border-radius:18px;background:linear-gradient(#4c3a2d 0%,#2e211a 55%,#1a1210 100%);cursor:grab;touch-action:pan-y;isolation:isolate}
+.stage.dragging{cursor:grabbing}
+.stage-wall{position:absolute;inset:0 0 30% 0;background:repeating-linear-gradient(90deg,#584638 0 2px,#4b3a2d 3px 110px);box-shadow:inset 0 -30px 38px rgba(16,10,7,.6)}
+.wall-sign{position:absolute;top:20px;left:50%;transform:translateX(-50%);text-align:center;color:#d7c5a5;z-index:1}
+.wall-sign small{display:block;font-size:8px;letter-spacing:.3em;color:#b3915b}
+.wall-sign b{display:block;font-size:17px;font-weight:400;margin-top:4px}
+.wall-sign i{display:block;width:36px;height:1px;background:#b18c50;margin:9px auto 0}
+.hang-row{position:absolute;bottom:0;left:12%;right:12%;height:66%;display:flex;align-items:flex-end;justify-content:space-around;gap:8%}
+.hang{width:19%;height:88%;border-width:6px;border-bottom-width:10px;cursor:pointer;transition:transform .4s,box-shadow .4s;box-shadow:0 14px 22px rgba(19,12,9,.65)}
+.hang::before,.hang::after{display:none}
+.hang:hover{transform:translateY(-8px) scale(1.02)}
+.stage-floor{position:absolute;bottom:0;height:30%;width:100%;background:repeating-linear-gradient(90deg,#34251c 0 1px,#3d2b21 2px 128px)}
+.roll-track{position:absolute;bottom:3%;left:0;right:0;height:84%;display:flex;align-items:flex-end;justify-content:center;gap:clamp(6px,1.2vw,16px);padding:0 7%;z-index:3;transition:transform .55s cubic-bezier(.2,.8,.2,1);will-change:transform}
+.roll{position:relative;flex:0 0 clamp(130px,17vw,200px);height:82%;background:none;padding:0;filter:drop-shadow(9px 11px 9px rgba(0,0,0,.55));transition:transform .35s;transform-origin:bottom center}
+.roll:hover{transform:translateY(-14px)}
+.roll-cap{position:absolute;left:0;right:0;height:16%;border-radius:50%;z-index:2;background:radial-gradient(ellipse at 48% 45%,#d0b37a 0 12%,#63472d 13% 19%,#c7a36a 20% 26%,#2b1b14 27% 33%,#a98650 34% 48%,#372318 49% 57%,#a78656 58% 65%,#241610 66%);box-shadow:inset 0 0 9px #0b0705}
+.roll-cap.top{top:0}
+.roll-cap.bottom{bottom:0}
+.roll-body{position:absolute;top:8%;bottom:8%;left:4%;right:4%;border-radius:8px;box-shadow:inset 9px 0 13px rgba(11,7,5,.38),inset -9px 0 13px rgba(11,7,5,.38)}
+.roll-tag{position:absolute;bottom:17%;left:50%;transform:translateX(-50%);font-size:8.5px;color:#f0dcb4;background:rgba(51,33,23,.75);border:1px solid #ad8953;padding:2px 8px;border-radius:6px;z-index:3}
+.stage-vig{position:absolute;inset:0;z-index:4;pointer-events:none;box-shadow:inset 0 0 70px rgba(16,10,7,.7)}
+.stage-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 8px 4px;color:#c5b59d;flex-wrap:wrap}
+.drag-hint{font-size:11px}
+.drag-hint b{color:var(--gold2)}
+.arrows{display:flex;gap:8px}
+.arrows button{width:38px;height:38px;border-radius:11px;border:1px solid #6d5539;color:#e0c797;font-size:15px;transition:.2s}
+.arrows button:hover{background:var(--gold);color:#211713;border-color:var(--gold)}
+.counter{font-size:11px;color:#8d7a60}
+.counter b{color:var(--gold2);font-size:15px}
+
+/* ---------- shop ---------- */
+.shop-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{padding:9px 17px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-size:12px;color:var(--ink2);transition:.2s;font-weight:500}
+.chip:hover{border-color:var(--gold);color:var(--gold)}
+.chip.active{background:var(--dark);color:#f4e9d8;border-color:var(--dark)}
+.sel{padding:10px 14px;border-radius:11px;border:1px solid var(--line);background:var(--surface);font-size:12px;color:var(--ink2);outline:none;cursor:pointer}
+.sel:focus{border-color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(252px,1fr));gap:22px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.3s;display:flex;flex-direction:column;position:relative}
+.card:hover{transform:translateY(-5px);box-shadow:0 24px 46px rgba(58,40,24,.14);border-color:#dcc9a8}
+.card-media{position:relative;background:linear-gradient(160deg,#efe3d2,#e2d2bb);padding:30px 20px;display:grid;place-items:center;overflow:hidden;cursor:pointer}
+.card-media .rug{width:76%;max-width:200px;aspect-ratio:3/4;transition:transform .5s ease}
+.card:hover .card-media .rug{transform:scale(1.05) rotate(-1.2deg)}
+.badge{position:absolute;top:12px;right:12px;background:var(--wine);color:#fff;font-size:9.5px;padding:5px 10px;border-radius:8px;z-index:2;font-weight:600}
+.off{position:absolute;top:12px;left:12px;background:var(--gold);color:#20160f;font-size:10px;padding:5px 9px;border-radius:8px;z-index:2;font-weight:700}
+.quick{position:absolute;bottom:12px;left:50%;transform:translate(-50%,14px);background:rgba(27,19,16,.9);color:#f4e9d8;font-size:10.5px;padding:8px 16px;border-radius:9px;opacity:0;transition:.3s;z-index:2;white-space:nowrap}
+.card:hover .quick{opacity:1;transform:translate(-50%,0)}
+.card-body{padding:15px 16px 16px;display:flex;flex-direction:column;gap:7px;flex:1}
+.card-cat{font-size:10px;color:var(--gold);font-weight:600}
+.card-body h3{font-size:13.5px;font-weight:600;margin:0;line-height:1.7;min-height:44px}
+.card-meta{font-size:10.5px;color:var(--muted)}
+.card-rate{font-size:10.5px;color:#c08a2e;display:flex;align-items:center;gap:5px}
+.card-rate small{color:var(--muted);font-size:9.5px}
+.card-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding-top:11px;border-top:1px dashed var(--line)}
+.price del{display:block;font-size:10px;color:#b3a48f}
+.price b{font-size:14px;color:var(--wine)}
+.price b small{font-size:9.5px;color:var(--muted);font-weight:400}
+.add{width:40px;height:40px;border-radius:11px;background:var(--dark);color:#f4e9d8;font-size:19px;display:grid;place-items:center;transition:.22s;flex:0 0 auto;line-height:1}
+.add:hover{background:var(--gold);color:#20160f;transform:scale(1.06)}
+.add.done{background:var(--ok)}
+.empty{text-align:center;padding:60px 20px;color:var(--muted);font-size:13px}
+.empty b{display:block;color:var(--ink);font-size:16px;margin-bottom:8px}
+
+/* ---------- offer ---------- */
+.offer{background:linear-gradient(120deg,#2a1d16,#150f0c);border-radius:26px;padding:44px;color:#f4e9d8;display:grid;grid-template-columns:1.2fr .8fr;gap:34px;align-items:center;position:relative;overflow:hidden;box-shadow:0 30px 60px rgba(30,18,10,.3)}
+.offer::before{content:'';position:absolute;inset:0;opacity:.4;background-image:radial-gradient(circle at 1px 1px,rgba(217,184,120,.18) 1px,transparent 0);background-size:24px 24px}
+.offer h3{font-family:'Markazi Text',serif;font-size:clamp(24px,3vw,36px);margin:14px 0 10px;font-weight:700;position:relative}
+.offer p{font-size:12.5px;color:#bda893;line-height:2.1;margin:0 0 22px;position:relative;max-width:420px}
+.countdown{display:flex;gap:10px;position:relative}
+.cd-box{background:rgba(255,255,255,.07);border:1px solid rgba(217,184,120,.28);border-radius:13px;padding:11px 15px;text-align:center;min-width:66px}
+.cd-box b{display:block;font-size:20px;color:var(--gold2);font-family:'Markazi Text',serif}
+.cd-box small{font-size:9px;color:#9b8b77}
+.offer-art{display:grid;place-items:center;position:relative}
+.offer-art .rug{width:66%;aspect-ratio:3/4;transform:rotate(5deg)}
+
+/* ---------- story ---------- */
+.story{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.story .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center;padding-top:80px;padding-bottom:80px}
+.story-rug{width:80%;aspect-ratio:3/4;transform:rotate(-5deg);margin:auto}
+.story h2{font-family:'Markazi Text',Vazirmatn,serif;font-size:clamp(25px,3vw,38px);font-weight:700;line-height:1.55;margin:14px 0 16px}
+.story h2 em{font-style:normal;color:var(--gold)}
+.story p{font-size:12.5px;color:var(--ink2);line-height:2.4;max-width:540px;margin:0 0 24px}
+
+/* ---------- testimonials ---------- */
+.tst-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tst{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:.3s}
+.tst:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.tst .stars{color:#d2a04a;font-size:12px;letter-spacing:2px}
+.tst p{font-size:12px;line-height:2.2;color:var(--ink2);margin:14px 0 18px}
+.tst-who{display:flex;align-items:center;gap:11px}
+.avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(145deg,#c9a468,#8a6529);color:#20160f;display:grid;place-items:center;font-weight:700;font-size:14px}
+.tst-who b{display:block;font-size:12px}
+.tst-who small{display:block;color:var(--muted);font-size:10px;margin-top:2px}
+
+/* ---------- newsletter ---------- */
+.news{background:linear-gradient(120deg,#6d1a24,#4a121a);border-radius:26px;padding:44px;color:#f8ecdd;display:grid;grid-template-columns:1fr .9fr;gap:30px;align-items:center;box-shadow:0 26px 55px rgba(74,18,26,.3)}
+.news h3{font-family:'Markazi Text',serif;font-size:clamp(22px,2.6vw,32px);margin:0 0 10px;font-weight:700}
+.news p{font-size:12px;color:#e2c7c7;line-height:2;margin:0}
+.news form{display:flex;gap:9px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:7px;border-radius:14px}
+.news input{flex:1;background:none;border:0;outline:none;padding:10px 12px;color:#fff;font-size:12.5px}
+.news input::placeholder{color:#e3c9c9}
+
+/* ---------- footer ---------- */
+footer{background:var(--dark);color:#b7a68f;padding-top:56px;margin-top:72px}
+.f-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:36px;padding-bottom:44px}
+.f-grid h4{color:#f2e7d6;font-size:13px;margin:0 0 16px;font-weight:600}
+.f-grid a,.f-grid li{font-size:11.5px;line-height:2.4;color:#a4957f;transition:.2s;display:block}
+.f-grid a:hover{color:var(--gold2)}
+.f-grid ul{list-style:none;padding:0;margin:0}
+.f-brand p{font-size:11.5px;line-height:2.2;color:#948572;max-width:280px;margin:16px 0}
+.social{display:flex;gap:9px;margin-top:16px}
+.social a{width:38px;height:38px;border-radius:11px;border:1px solid #3a2c22;display:grid;place-items:center;font-size:14px}
+.social a:hover{background:var(--gold);color:#1b1310;border-color:var(--gold)}
+.f-bottom{border-top:1px solid #2b201a;padding:20px 0;display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:10.5px;flex-wrap:wrap}
+.pay{display:flex;gap:8px}
+.pay span{border:1px solid #3a2c22;border-radius:8px;padding:5px 11px;font-size:10px;color:#9c8d78}
+
+/* ---------- cart drawer ---------- */
+.overlay{position:fixed;inset:0;background:rgba(20,12,8,.58);backdrop-filter:blur(4px);z-index:85;opacity:0;pointer-events:none;transition:.35s}
+.overlay.show{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;left:0;bottom:0;width:min(430px,100%);background:var(--surface);z-index:90;transform:translateX(-103%);transition:transform .42s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;box-shadow:14px 0 50px rgba(0,0,0,.25)}
+.drawer.open{transform:none}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:20px 22px;border-bottom:1px solid var(--line)}
+.drawer-head b{font-size:15px}
+.drawer-head .x{width:36px;height:36px;border-radius:10px;border:1px solid var(--line);display:grid;place-items:center;font-size:18px;transition:.2s}
+.drawer-head .x:hover{background:#f2e7d5;border-color:var(--gold)}
+.drawer-body{flex:1;overflow:auto;padding:16px 22px}
+.ci{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);position:relative}
+.ci-rug{width:62px;height:78px;border-radius:6px;border:4px solid #c9a468;flex:0 0 auto;box-shadow:0 6px 14px rgba(60,40,20,.2)}
+.ci-rug::before,.ci-rug::after{display:none}
+.ci-info{flex:1;min-width:0}
+.ci-info b{display:block;font-size:12px;font-weight:600;line-height:1.6;padding-left:26px}
+.ci-info small{display:block;color:var(--muted);font-size:10px;margin-top:3px}
+.ci-row{display:flex;align-items:center;justify-content:space-between;margin-top:10px;gap:8px}
+.qty{display:flex;align-items:center;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.qty button{width:27px;height:27px;display:grid;place-items:center;font-size:14px;color:var(--ink2);transition:.2s}
+.qty button:hover{background:var(--gold-soft)}
+.qty span{min-width:28px;text-align:center;font-size:11.5px;font-weight:600}
+.ci-price{font-size:12px;font-weight:700;color:var(--wine);white-space:nowrap}
+.ci-del{position:absolute;top:12px;left:0;width:22px;height:22px;border-radius:6px;color:#b3a48f;font-size:15px;display:grid;place-items:center;transition:.2s}
+.ci-del:hover{background:#f7e2e2;color:#b02c2c}
+.drawer-foot{padding:18px 22px 22px;border-top:1px solid var(--line);background:#fdf8ef}
+.coupon{display:flex;gap:7px;margin-bottom:14px}
+.coupon input{flex:1;padding:10px 13px;border:1px solid var(--line);border-radius:10px;font-size:11.5px;outline:none;background:#fff}
+.coupon input:focus{border-color:var(--gold)}
+.coupon button{padding:0 16px;border-radius:10px;background:var(--dark);color:#f4e9d8;font-size:11.5px;transition:.2s}
+.coupon button:hover{background:var(--gold);color:#20160f}
+.sum-row{display:flex;justify-content:space-between;font-size:11.5px;color:var(--ink2);padding:5px 0}
+.sum-row.disc{color:var(--ok)}
+.sum-row.total{font-size:13.5px;font-weight:700;color:var(--ink);border-top:1px dashed var(--line);margin-top:9px;padding-top:12px}
+.sum-row.total b{color:var(--wine);font-size:16px}
+.drawer-foot .btn{width:100%;margin-top:14px}
+.cart-empty{text-align:center;padding:60px 20px;color:var(--muted);font-size:12.5px}
+.cart-empty div{font-size:44px;margin-bottom:14px;opacity:.4}
+
+/* ---------- modal ---------- */
+.modal{position:fixed;inset:0;z-index:95;display:none;place-items:center;padding:18px}
+.modal.open{display:grid}
+.modal-backdrop{position:absolute;inset:0;background:rgba(20,12,8,.65);backdrop-filter:blur(6px)}
+.dialog{position:relative;z-index:1;background:var(--surface);border-radius:22px;width:min(920px,100%);max-height:92vh;overflow:auto;box-shadow:0 36px 90px rgba(0,0,0,.4);animation:pop .3s ease}
+.dialog.sm{width:min(600px,100%)}
+@keyframes pop{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
+.dialog-x{position:absolute;top:14px;left:14px;z-index:5;width:36px;height:36px;border-radius:11px;background:rgba(27,19,16,.92);color:#fff;font-size:19px;display:grid;place-items:center;transition:.2s}
+.dialog-x:hover{background:var(--wine)}
+.pv{display:grid;grid-template-columns:1fr 1fr}
+.pv-media{background:linear-gradient(160deg,#efe3d2,#ddcbb2);display:grid;place-items:center;padding:44px 30px;position:relative;min-height:420px}
+.pv-media .rug{width:74%;max-width:270px;aspect-ratio:3/4;transform:rotate(-2deg)}
+.pv-media .vlabel{position:absolute;bottom:16px;left:18px;font-size:8px;letter-spacing:.2em;color:#8a7455}
+.pv-info{padding:44px 34px 32px;display:flex;flex-direction:column}
+.pv-info .code{font-size:10px;color:var(--muted);margin-bottom:8px}
+.pv-info h2{font-family:'Markazi Text',Vazirmatn,serif;font-size:26px;margin:0 0 12px;font-weight:700;line-height:1.5}
+.pv-info>p{font-size:11.5px;color:var(--ink2);line-height:2.2;margin:0 0 18px}
+.specs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+.specs div{background:#faf3e7;border-radius:11px;padding:10px 12px}
+.specs small{display:block;font-size:9.5px;color:var(--muted)}
+.specs b{display:block;font-size:11.5px;margin-top:3px}
+.pv-price{display:flex;align-items:baseline;gap:10px;margin-bottom:18px}
+.pv-price b{font-size:22px;color:var(--wine);font-family:'Markazi Text',serif}
+.pv-price del{font-size:12px;color:#b3a48f}
+.pv-actions{display:flex;gap:10px;margin-top:auto}
+.pv-actions .btn{flex:1}
+.note{font-size:9.5px;color:var(--muted);line-height:1.9;margin-top:14px}
+
+/* ---------- checkout ---------- */
+.co-head{padding:26px 28px 0}
+.co-head h2{font-family:'Markazi Text',serif;font-size:24px;margin:0 0 6px;font-weight:700}
+.co-head p{font-size:11.5px;color:var(--muted);margin:0}
+.co-body{padding:20px 28px 28px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:11px;color:var(--ink2);margin-bottom:7px;font-weight:600}
+.field input,.field textarea,.field select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:11px;background:#fff;font-size:12.5px;outline:none;transition:.2s;color:var(--ink)}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(185,138,75,.12)}
+.field textarea{resize:vertical;min-height:82px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pay-opts{display:grid;gap:9px;margin:6px 0 18px}
+.pay-opt{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:12px;cursor:pointer;transition:.2s}
+.pay-opt:has(input:checked){border-color:var(--gold);background:#fdf6e9}
+.pay-opt input{accent-color:var(--gold);width:16px;height:16px}
+.co-sum{background:#faf3e7;border-radius:14px;padding:14px 16px;margin-bottom:18px}
+.err{color:#b02c2c;font-size:11px;margin-top:6px;display:none}
+.err.show{display:block}
+.success{text-align:center;padding:20px 8px 8px}
+.success .tick{width:74px;height:74px;border-radius:50%;background:#e7f3ec;color:var(--ok);display:grid;place-items:center;font-size:34px;margin:0 auto 18px}
+.success h3{font-family:'Markazi Text',serif;font-size:25px;margin:0 0 10px}
+.success p{font-size:12px;color:var(--muted);line-height:2.1;margin:0 0 18px}
+.order-code{background:#faf3e7;border:1px dashed var(--gold);border-radius:12px;padding:13px;font-size:13px;font-weight:700;color:var(--wine);margin-bottom:20px}
+
+/* ---------- toast ---------- */
+.toasts{position:fixed;bottom:22px;left:22px;z-index:120;display:flex;flex-direction:column;gap:9px}
+.toast{background:var(--dark);color:#f4e9d8;font-size:12px;padding:13px 20px;border-radius:12px;box-shadow:0 16px 34px rgba(0,0,0,.3);opacity:0;transform:translateY(14px);transition:.3s;display:flex;align-items:center;gap:9px;border-right:3px solid var(--gold)}
+.toast.show{opacity:1;transform:none}
+
+/* ---------- patterns ---------- */
+.p1{background-color:#751e29;background-image:radial-gradient(ellipse at center,transparent 0 16%,#d7b776 17% 19%,transparent 20% 27%,#d7b776 28% 30%,transparent 31%),repeating-linear-gradient(90deg,transparent 0 13px,#d7b776 14px 15px,transparent 16px 28px),repeating-linear-gradient(0deg,transparent 0 13px,#d7b776 14px 15px,transparent 16px 28px)}
+.p2{background-color:#8c2631;background-image:radial-gradient(ellipse at 50% 50%,#d6b776 0 7%,#681d27 8% 12%,#d6b776 13% 15%,transparent 16%),repeating-linear-gradient(45deg,transparent 0 16px,#d1ad70 17px 18px,transparent 19px 32px),repeating-linear-gradient(-45deg,transparent 0 16px,#d1ad70 17px 18px,transparent 19px 32px)}
+.p3{background-color:#a65f36;background-image:repeating-linear-gradient(45deg,transparent 0 17px,#e0c28a 18px 20px,transparent 21px 35px),repeating-linear-gradient(-45deg,transparent 0 17px,#613c2a 18px 20px,transparent 21px 35px),radial-gradient(ellipse,#5d3023 0 10%,transparent 11%)}
+.p4{background-color:#d0b98d;background-image:radial-gradient(ellipse at center,transparent 0 15%,#8c4937 16% 18%,transparent 19% 27%,#8c4937 28% 30%,transparent 31%),repeating-linear-gradient(90deg,transparent 0 20px,#8c4937 21px 22px,transparent 23px 40px)}
+.p5{background-color:#182d49;background-image:radial-gradient(ellipse at center,#d3b477 0 7%,transparent 8% 20%,#d3b477 21% 23%,transparent 24%),repeating-linear-gradient(0deg,transparent 0 18px,#bba16e 19px 20px,transparent 21px 36px),repeating-linear-gradient(90deg,transparent 0 18px,#bba16e 19px 20px,transparent 21px 36px)}
+.p6{background-color:#a18a60;background-image:radial-gradient(ellipse at 30% 30%,#542e25 0 5%,transparent 6%),radial-gradient(ellipse at 70% 70%,#542e25 0 5%,transparent 6%),repeating-linear-gradient(45deg,transparent 0 22px,#e0c58d 23px 24px,transparent 25px 44px)}
+.p7{background-color:#713d2b;background-image:radial-gradient(ellipse at center,#d5b879 0 6%,transparent 7% 17%,#d5b879 18% 20%,transparent 21%),repeating-linear-gradient(90deg,transparent 0 16px,#d5b879 17px 18px,transparent 19px 32px)}
+.p8{background-color:#1f3a4a;background-image:radial-gradient(circle at 50% 50%,#d8bd82 0 6%,transparent 7% 14%,#d8bd82 15% 17%,transparent 18%),repeating-linear-gradient(45deg,transparent 0 14px,#c9ad78 15px 16px,transparent 17px 30px),repeating-linear-gradient(-45deg,transparent 0 14px,#7fa0ad 15px 17px,transparent 18px 32px)}
+.p9{background-color:#8a3b2c;background-image:radial-gradient(ellipse at 25% 25%,#e5c78d 0 6%,transparent 7%),radial-gradient(ellipse at 75% 75%,#e5c78d 0 6%,transparent 7%),repeating-linear-gradient(0deg,transparent 0 16px,#e5c78d 17px 18px,transparent 19px 34px),repeating-linear-gradient(90deg,transparent 0 16px,#5d2b20 17px 18px,transparent 19px 34px)}
+
+/* ---------- responsive ---------- */
+@media(max-width:1040px){
+  .nav{display:none}
+  .menu-btn{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;border:1px solid var(--line);background:var(--surface);font-size:18px}
+  .hero .wrap{grid-template-columns:1fr;gap:34px;padding-top:48px;padding-bottom:54px}
+  .hero-visual{min-height:340px;order:2}
+  .trust .wrap{grid-template-columns:1fr 1fr}
+  .cats{grid-template-columns:1fr 1fr}
+  .offer,.news{grid-template-columns:1fr;padding:32px}
+  .offer-art{display:none}
+  .story .wrap{grid-template-columns:1fr;gap:34px}
+  .story-rug{width:60%}
+  .tst-grid{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr 1fr;gap:26px}
+  .pv{grid-template-columns:1fr}
+  .pv-media{min-height:250px;padding:30px}
+  .pv-media .rug{width:46%}
+}
+@media(max-width:640px){
+  .wrap{padding:0 16px}
+  .sec{padding:52px 16px}
+  .topline .wrap span:first-child{display:none}
+  .brand small{display:none}
+  .search{max-width:none}
+  .hero h1{font-size:38px}
+  .hero-stats{gap:22px}
+  .trust .wrap{grid-template-columns:1fr}
+  .cats{grid-template-columns:1fr 1fr;gap:11px}
+  .cat{min-height:150px;padding:13px}
+  .stage{height:340px}
+  .roll{flex:0 0 84px;height:78%}
+  .hang-row{left:8%;right:8%;height:54%}
+  .grid{grid-template-columns:1fr 1fr;gap:12px}
+  .card-media{padding:22px 12px}
+  .card-body{padding:11px 12px 13px}
+  .card-body h3{font-size:11.5px;min-height:38px}
+  .price b{font-size:12px}
+  .add{width:34px;height:34px;font-size:16px}
+  .quick{display:none}
+  .f-grid{grid-template-columns:1fr}
+  .news form{flex-direction:column}
+  .news form .btn{width:100%}
+  .dialog{border-radius:18px}
+  .pv-info{padding:26px 20px}
+  .two{grid-template-columns:1fr}
+  .toasts{left:12px;right:12px;bottom:12px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<!-- ══════════ TOP LINE ══════════ -->
+<div class="topline">
+  <div class="wrap">
+    <span>🚚 ارسال رایگان برای سفارش‌های بالای ۲۰٬۰۰۰٬۰۰۰ تومان</span>
+    <span>📞 پشتیبانی: <a href="tel:02112345678">۰۲۱-۱۲۳۴۵۶۷۸</a></span>
+  </div>
+</div>
+
+<!-- ══════════ HEADER ══════════ -->
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="brand-mark">خ</span>
+      <span><b>خانه فرش</b><small>هنرِ بافته‌شده در زمان</small></span>
+    </a>
+    <nav class="nav">
+      <a href="#shop">فروشگاه</a>
+      <a href="#categories">دسته‌بندی‌ها</a>
+      <a href="#showroom">نمایشگاه مجازی</a>
+      <a href="#story">درباره ما</a>
+      <a href="#contact">تماس</a>
+    </nav>
+    <div class="search">
+      <span class="ico">🔍</span>
+      <input type="search" id="searchInput" placeholder="جستجوی فرش، نقش یا کد محصول…" aria-label="جستجو">
+    </div>
+    <div class="acts">
+      <button class="icon-btn" id="cartBtn" aria-label="سبد خرید">
+        🛍
+        <span class="cart-count" id="cartCount">۰</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" aria-label="منو">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="pill">✦ مجموعه پاییز ۱۴۰۵ منتشر شد</span>
+        <h1>فرش دستباف ایرانی،<br><em>به بلندای تاریخ.</em></h1>
+        <p>از گره‌های ظریف تبریز تا هندسه بی‌همتای هریس؛ هر فرش، روایتی است که سال‌ها برای بافته‌شدن زمان صرف کرده. همین حالا آنلاین سفارش دهید، درِ خانه تحویل بگیرید.</p>
+        <div class="hero-cta">
+          <a class="btn btn-gold" href="#shop">خرید از فروشگاه ↗</a>
+          <a class="btn btn-ghost" href="#showroom">تماشای نمایشگاه</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>۳۸ سال</b><small>سابقه در فرش دستباف</small></div>
+          <div><b>+۲٬۴۰۰</b><small>سفارش موفق</small></div>
+          <div><b>۱۰۰٪</b><small>ضمانت اصالت</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <div class="rug hero-frame p5" aria-hidden="true"></div>
+        <div class="hero-float f1">✓<span>ضمانت اصالت<small>با شناسنامه معتبر</small></span></div>
+        <div class="hero-float f2">🚚<span>ارسال بیمه‌شده<small>به سراسر ایران</small></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ TRUST ══════════ -->
+  <div class="trust">
+    <div class="wrap">
+      <div class="trust-item"><i>✓</i><div><b>ضمانت اصالت کالا</b><small>همراه با شناسنامه بافت</small></div></div>
+      <div class="trust-item"><i>🚚</i><div><b>ارسال سریع و بیمه‌شده</b><small>تهران ۲۴ ساعت، شهرستان ۲ تا ۴ روز</small></div></div>
+      <div class="trust-item"><i>↩</i><div><b>۷ روز مهلت بازگشت</b><small>بدون قید و شرط</small></div></div>
+      <div class="trust-item"><i>🔒</i><div><b>پرداخت امن آنلاین</b><small>درگاه بانکی معتبر</small></div></div>
+    </div>
+  </div>
+
+  <!-- ══════════ CATEGORIES ══════════ -->
+  <section class="sec" id="categories">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow"><i></i> دسته‌بندی مجموعه‌ها</div>
+        <h2>از کدام مکتب فرش خرید می‌کنید؟</h2>
+      </div>
+      <a class="btn btn-outline" href="#shop">مشاهده همه فرش‌ها ←</a>
+    </div>
+    <div class="cats" id="catTiles"></div>
+  </section>
+
+  <!-- ══════════ SHOWROOM ══════════ -->
+  <section class="sec" id="showroom" style="padding-top:0">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow"><i></i> نمایشگاه مجازی</div>
+        <h2>طاقه‌ها را کنار بزنید</h2>
+        <p>با کشیدن انگشت یا ماوس، طاقه‌ها را کنار بزنید و فرش‌های پشت آن‌ها را ببینید. روی هر طاقه کلیک کنید تا جزئیات محصول باز شود.</p>
+      </div>
+    </div>
+    <div class="stage-wrap">
+      <div class="stage" id="stage">
+        <div class="stage-wall">
+          <div class="wall-sign"><small>KHANEH FARSH</small><b>گنجینه‌ی نقش و رنگ</b><i></i></div>
+          <div class="hang-row">
+            <button class="hang rug p2" data-id="2" aria-label="مشاهده فرش لاکی شاه‌عباسی"></button>
+            <button class="hang rug p4" data-id="4" aria-label="مشاهده فرش افشان کرم"></button>
+            <button class="hang rug p6" data-id="6" aria-label="مشاهده فرش شکارگاه"></button>
+          </div>
+        </div>
+        <div class="stage-floor"></div>
+        <div class="roll-track" id="rollTrack"></div>
+        <div class="stage-vig"></div>
+      </div>
+      <div class="stage-bar">
+        <div class="drag-hint">☝ <b>بکشید</b> تا طاقه‌ها کنار بروند</div>
+        <div class="arrows">
+          <button id="prevBtn" aria-label="قبلی">→</button>
+          <button id="nextBtn" aria-label="بعدی">←</button>
+        </div>
+        <div class="counter"><b id="counter">۰۱</b> / ۰۷</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SHOP ══════════ -->
+  <section class="sec" id="shop" style="padding-top:0">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow"><i></i> فروشگاه آنلاین</div>
+        <h2>همه فرش‌های دستباف</h2>
+      </div>
+      <div class="shop-tools">
+        <div class="chips" id="chips"></div>
+        <select class="sel" id="sortSel" aria-label="مرتب‌سازی">
+          <option value="popular">پرفروش‌ترین</option>
+          <option value="cheap">ارزان‌ترین</option>
+          <option value="expensive">گران‌ترین</option>
+          <option value="rate">بیشترین امتیاز</option>
+        </select>
+      </div>
+    </div>
+    <div class="grid" id="productGrid"></div>
+    <div class="empty" id="emptyState" hidden><b>محصولی یافت نشد</b>فیلترها یا عبارت جستجو را تغییر دهید.</div>
+  </section>
+
+  <!-- ══════════ OFFER ══════════ -->
+  <section class="sec" style="padding-top:0">
+    <div class="offer">
+      <div>
+        <div class="eyebrow"><i></i> پیشنهاد ویژه هفته</div>
+        <h3>۱۵٪ تخفیف روی فرش‌های تبریز</h3>
+        <p>فقط تا پایان امشب؛ با کد تخفیف <b style="color:var(--gold2)">HOME10</b> هم ۱۰٪ تخفیف اضافه روی کل سبد خرید بگیرید.</p>
+        <div class="countdown">
+          <div class="cd-box"><b id="cdH">۰۰</b><small>ساعت</small></div>
+          <div class="cd-box"><b id="cdM">۰۰</b><small>دقیقه</small></div>
+          <div class="cd-box"><b id="cdS">۰۰</b><small>ثانیه</small></div>
+        </div>
+      </div>
+      <div class="offer-art"><div class="rug p1"></div></div>
+    </div>
+  </section>
+
+  <!-- ══════════ STORY ══════════ -->
+  <section class="story" id="story">
+    <div class="wrap">
+      <div><div class="rug story-rug p2"></div></div>
+      <div>
+        <div class="eyebrow"><i></i> داستان خانه فرش</div>
+        <h2>فرش فقط یک زیرانداز نیست؛<br><em>روایتی‌ست که بافته می‌شود.</em></h2>
+        <p>سال ۱۳۶۷، اولین تخته فرش را از بازار تبریز خریدیم و امروز همان عشق به نقش و رنگ، ما را به فروشگاهی آنلاین رسانده که بیش از ۲٬۴۰۰ خانه را گرم کرده است. هر گره نشانی از صبر، هر رنگ یادگاری از سرزمین و هر نقش بخشی از فرهنگی‌ست که نسل به نسل ادامه پیدا کرده است.</p>
+        <p>ما مستقیم از بافندگان خرید می‌کنیم؛ بدون واسطه، با قیمت منصفانه و شناسنامه‌ای که اصالت هر فرش را تضمین می‌کند.</p>
+        <a class="btn btn-gold" href="#shop">کشف مجموعه فرش‌ها ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ TESTIMONIALS ══════════ -->
+  <section class="sec">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow"><i></i> نظر مشتریان</div>
+        <h2>آن‌ها تجربه‌شان را گفته‌اند</h2>
+      </div>
+    </div>
+    <div class="tst-grid">
+      <div class="tst">
+        <div class="stars">★★★★★</div>
+        <p>فرش تبریز را دقیقاً مطابق تصویر دریافت کردم. بسته‌بندی فوق‌العاده بود و شناسنامه بافت هم داخل جعبه قرار داشت. خرید آنلاین فرش همیشه ریسک است، اما اینجا خیالم راحت شد.</p>
+        <div class="tst-who"><span class="avatar">م</span><div><b>مریم احمدی</b><small>تهران · خریدار فرش ترنج لاکی</small></div></div>
+      </div>
+      <div class="tst">
+        <div class="stars">★★★★★</div>
+        <p>پشتیبانی واقعاً حرفه‌ای بود. قبل از خرید ویدیوی واقعی فرش را برایم فرستادند و درباره ابعاد دقیق راهنمایی کردند. ارسال هم دو روزه انجام شد.</p>
+        <div class="tst-who"><span class="avatar">ر</span><div><b>رضا کریمی</b><small>اصفهان · خریدار فرش هریس</small></div></div>
+      </div>
+      <div class="tst">
+        <div class="stars">★★★★☆</div>
+        <p>کیفیت رنگ و بافت عالی بود. تنها نکته این بود که کمی دیرتر از موعد رسید، ولی با توجه به بیمه‌ی ارسال و بسته‌بندی سالم، ارزشش را داشت.</p>
+        <div class="tst-who"><span class="avatar">س</span><div><b>سارا موسوی</b><small>شیراز · خریدار فرش افشان</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ NEWSLETTER ══════════ -->
+  <section class="sec" id="contact" style="padding-top:0">
+    <div class="news">
+      <div>
+        <h3>از تخفیف‌ها و مجموعه‌های تازه باخبر شوید</h3>
+        <p>ایمیل خود را وارد کنید؛ هر ماه یک نامه کوتاه با معرفی فرش‌های تازه و کد تخفیف اختصاصی دریافت می‌کنید.</p>
+      </div>
+      <form id="newsForm">
+        <input type="email" placeholder="ایمیل شما…" required aria-label="ایمیل">
+        <button class="btn btn-gold" type="submit">عضویت</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a class="brand" href="#top"><span class="brand-mark">خ</span><span><b style="color:#f2e7d6">خانه فرش</b><small style="color:#8f806d">هنرِ بافته‌شده در زمان</small></span></a>
+        <p>فروشگاه آنلاین فرش دستباف ایرانی با ضمانت اصالت و ارسال بیمه‌شده به سراسر کشور.</p>
+        <div class="social"><a href="#" aria-label="اینستاگرام">◎</a><a href="#" aria-label="تلگرام">✈</a><a href="#" aria-label="واتساپ">✆</a></div>
+      </div>
+      <div>
+        <h4>فروشگاه</h4>
+        <ul>
+          <li><a href="#shop">همه فرش‌ها</a></li>
+          <li><a href="#categories">دسته‌بندی‌ها</a></li>
+          <li><a href="#showroom">نمایشگاه مجازی</a></li>
+          <li><a href="#shop">فرش‌های تخفیف‌دار</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>راهنما</h4>
+        <ul>
+          <li><a href="#">نحوه ارسال</a></li>
+          <li><a href="#">شرایط بازگشت</a></li>
+          <li><a href="#">ضمانت اصالت</a></li>
+          <li><a href="#">راهنمای انتخاب ابعاد</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>تماس با ما</h4>
+        <ul>
+          <li>تهران، خیابان ولیعصر، پلاک ۱۲۰۴</li>
+          <li><a href="tel:02112345678">۰۲۱-۱۲۳۴۵۶۷۸</a></li>
+          <li><a href="https://wa.me/989121234567" target="_blank" rel="noreferrer">واتساپ: ۰۹۱۲۱۲۳۴۵۶۷</a></li>
+          <li>شنبه تا پنجشنبه، ۹ تا ۱۹</li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© ۱۴۰۵ خانه فرش · تمامی حقوق محفوظ است.</span>
+      <div class="pay"><span>پرداخت امن</span><span>شاپرک</span><span>درگاه بانکی</span></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════ OVERLAY ══════════ -->
+<div class="overlay" id="overlay"></div>
+
+<!-- ══════════ CART DRAWER ══════════ -->
+<aside class="drawer" id="cartDrawer" aria-hidden="true" aria-label="سبد خرید">
+  <div class="drawer-head">
+    <b>سبد خرید شما</b>
+    <button class="x" id="cartClose" aria-label="بستن">×</button>
+  </div>
+  <div class="drawer-body" id="cartBody"></div>
+  <div class="drawer-foot">
+    <div class="coupon">
+      <input type="text" id="couponInput" placeholder="کد تخفیف (مثلاً HOME10)">
+      <button id="couponBtn">اعمال</button>
+    </div>
+    <div class="sum-row"><span>جمع کالاها</span><span id="sumSub">۰ تومان</span></div>
+    <div class="sum-row"><span>هزینه ارسال</span><span id="sumShip">—</span></div>
+    <div class="sum-row disc" id="discRow" style="display:none"><span>تخفیف کد</span><span id="sumDisc">۰</span></div>
+    <div class="sum-row total"><span>قابل پرداخت</span><b id="sumTotal">۰ تومان</b></div>
+    <button class="btn btn-gold" id="goCheckout">تکمیل خرید و پرداخت</button>
+  </div>
+</aside>
+
+<!-- ══════════ PRODUCT MODAL ══════════ -->
+<div class="modal" id="productModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="pvTitle">
+    <button class="dialog-x" data-close aria-label="بستن">×</button>
+    <div class="pv">
+      <div class="pv-media">
+        <div class="rug" id="pvRug"></div>
+        <span class="vlabel">HANDWOVEN · IRAN</span>
+      </div>
+      <div class="pv-info">
+        <span class="code" id="pvCode">کد محصول: KH-001</span>
+        <h2 id="pvTitle">—</h2>
+        <p id="pvDesc">—</p>
+        <div class="specs">
+          <div><small>منطقه بافت</small><b id="pvOrigin">—</b></div>
+          <div><small>ابعاد</small><b id="pvSize">—</b></div>
+          <div><small>جنس</small><b id="pvMaterial">—</b></div>
+          <div><small>نوع بافت</small><b>دستباف</b></div>
+        </div>
+        <div class="pv-price"><b id="pvPrice">—</b><del id="pvOld"></del></div>
+        <div class="pv-actions">
+          <button class="btn btn-gold" id="pvAdd">افزودن به سبد خرید</button>
+          <a class="btn btn-outline" id="pvWa" href="https://wa.me/989121234567" target="_blank" rel="noreferrer">مشاوره ✆</a>
+        </div>
+        <div class="note">✓ ضمانت اصالت و شناسنامه بافت · ✓ ارسال بیمه‌شده · ✓ ۷ روز مهلت بازگشت کالا</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ CHECKOUT MODAL ══════════ -->
+<div class="modal" id="checkoutModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="dialog sm" role="dialog" aria-modal="true">
+    <button class="dialog-x" data-close aria-label="بستن">×</button>
+    <div id="coForm">
+      <div class="co-head">
+        <h2>تکمیل خرید</h2>
+        <p>اطلاعات ارسال را وارد کنید؛ سفارش شما پس از تأیید، بسته‌بندی و ارسال می‌شود.</p>
+      </div>
+      <div class="co-body">
+        <div class="two">
+          <div class="field"><label>نام و نام خانوادگی *</label><input id="fName" placeholder="مثلاً مریم احمدی"></div>
+          <div class="field"><label>شماره تماس *</label><input id="fPhone" placeholder="۰۹۱۲۱۲۳۴۵۶۷" inputmode="tel"></div>
+        </div>
+        <div class="two">
+          <div class="field"><label>استان</label><input id="fProv" placeholder="تهران"></div>
+          <div class="field"><label>شهر</label><input id="fCity" placeholder="تهران"></div>
+        </div>
+        <div class="field"><label>آدرس کامل *</label><textarea id="fAddr" placeholder="خیابان، کوچه، پلاک، واحد…"></textarea></div>
+        <div class="field"><label>کد پستی</label><input id="fZip" placeholder="۱۲۳۴۵۶۷۸۹۰" inputmode="numeric"></div>
+        <label style="font-size:11px;font-weight:600;color:var(--ink2);margin-bottom:4px;display:block">روش پرداخت</label>
+        <div class="pay-opts">
+          <label class="pay-opt"><input type="radio" name="pay" value="online" checked> پرداخت آنلاین (درگاه امن بانکی)</label>
+          <label class="pay-opt"><input type="radio" name="pay" value="cod"> پرداخت در محل هنگام تحویل</label>
+        </div>
+        <div class="co-sum" id="coSummary"></div>
+        <div class="err" id="coErr">لطفاً نام و شماره تماس معتبر (۰۹xxxxxxxxx) را وارد کنید.</div>
+        <button class="btn btn-gold" id="placeOrder" style="width:100%">ثبت سفارش و پرداخت</button>
+        <div class="note" style="text-align:center">با ثبت سفارش، قوانین فروشگاه را می‌پذیرید. این نسخه نمایشی است و پرداخت واقعی انجام نمی‌شود.</div>
+      </div>
+    </div>
+    <div id="coSuccess" hidden>
+      <div class="co-body">
+        <div class="success">
+          <div class="tick">✓</div>
+          <h3>سفارش شما ثبت شد!</h3>
+          <p>همکاران ما تا حداکثر ۲۴ ساعت آینده برای هماهنگی ارسال با شما تماس می‌گیرند.</p>
+          <div class="order-code">کد پیگیری سفارش: <span id="orderCode">—</span></div>
+          <button class="btn btn-dark" data-close style="width:100%">بازگشت به فروشگاه</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts"></div>
+
+<script>
+/* ══════════════════════════════════════════════════════
+   داده‌ها
+   ══════════════════════════════════════════════════════ */
+const PRODUCTS = [
+  {id:1,name:'فرش دستباف تبریز؛ ترنج لاکی',code:'KH-001',cat:'تبریز',origin:'تبریز',size:'۳ × ۲ متر',material:'پشم و ابریشم',price:48500000,old:55000000,rating:4.9,reviews:38,pattern:'p1',badge:'پرفروش',desc:'ترکیبی از نقش اصیل ترنج، رنگ‌های لاکی گرم و حاشیه‌های ظریف؛ نمونه‌ای درخشان از هنر بافت آذربایجان با ریشه‌های تمام‌ابریشم.'},
+  {id:2,name:'فرش لاکی شاه‌عباسی',code:'KH-002',cat:'تبریز',origin:'تبریز',size:'۲٫۵ × ۱٫۷ متر',material:'پشم دست‌ریس',price:32900000,old:0,rating:4.8,reviews:24,pattern:'p2',badge:'',desc:'گل‌وبوته‌های شاه‌عباسی با رنگ لاکی گرم و جزئیات الهام‌گرفته از نقوش کلاسیک مکتب تبریز.'},
+  {id:3,name:'فرش هریس؛ هندسه ماندگار',code:'KH-003',cat:'هریس',origin:'هریس',size:'۳ × ۲ متر',material:'پشم',price:27400000,old:31000000,rating:4.7,reviews:41,pattern:'p3',badge:'تخفیف ویژه',desc:'هندسه جسورانه و رنگ‌های خاکی؛ انتخابی اصیل با هویت روستایی آذربایجان و دوام بالا برای فضاهای پرتردد.'},
+  {id:4,name:'فرش افشان کرم',code:'KH-004',cat:'تبریز',origin:'تبریز',size:'۲ × ۱٫۵ متر',material:'پشم و ابریشم',price:18900000,old:0,rating:4.6,reviews:19,pattern:'p4',badge:'',desc:'زمینه روشن و نقش‌های پراکنده برای فضایی آرام، روشن و معاصر؛ مناسب اتاق نشیمن کوچک یا اتاق خواب.'},
+  {id:5,name:'فرش سرمه‌ای لچک ترنج',code:'KH-005',cat:'تبریز',origin:'تبریز',size:'۳٫۵ × ۲٫۵ متر',material:'پشم و ابریشم',price:76000000,old:84000000,rating:5,reviews:52,pattern:'p5',badge:'لاکچری',desc:'زمینه سرمه‌ای عمیق با ترنج مرکزی و حاشیه‌های متوازن؛ فرشی باوقار و چشمگیر برای پذیرایی‌های بزرگ.'},
+  {id:6,name:'فرش نقش شکارگاه',code:'KH-006',cat:'آذربایجان',origin:'آذربایجان',size:'۳ × ۲ متر',material:'پشم',price:41200000,old:0,rating:4.8,reviews:16,pattern:'p6',badge:'جدید',desc:'روایتی تصویری از نقش‌های سنتی و طبیعت در قالب یک اثر دستباف؛ مناسب کلکسیونرها و علاقه‌مندان فرش تصویری.'},
+  {id:7,name:'فرش بته‌جقه اردبیل',code:'KH-007',cat:'اردبیل',origin:'اردبیل',size:'۲ × ۱٫۵ متر',material:'پشم',price:22800000,old:0,rating:4.5,reviews:12,pattern:'p7',badge:'',desc:'نقش بته‌جقه با ترکیب رنگ گرم و قاب‌بندی سنتی؛ انتخابی دلنشین با قیمت مناسب.'},
+  {id:8,name:'فرش گنبد کبود تبریز',code:'KH-008',cat:'تبریز',origin:'تبریز',size:'۲ × ۱٫۵ متر',material:'ابریشم',price:34500000,old:39000000,rating:4.9,reviews:29,pattern:'p8',badge:'پرفروش',desc:'الهام‌گرفته از کاشی‌کاری گنبدهای آبی آذربایجان؛ درخشش ابریشم در نور روز و شب.'},
+  {id:9,name:'فرش گل فرنگ',code:'KH-009',cat:'اردبیل',origin:'اردبیل',size:'۳ × ۲ متر',material:'پشم',price:29900000,old:0,rating:4.6,reviews:22,pattern:'p9',badge:'',desc:'گل‌های فرنگی درخشان روی زمینه قرمز آجری؛ ترکیبی از سنت و سلیقه امروزی.'}
+];
+
+const byId = id => PRODUCTS.find(p => p.id === Number(id));
+const fa = n => Number(n).toLocaleString('fa-IR');
+const faDigits = s => String(s).replace(/[0-9]/g, d => '۰۱۲۳۴۵۶۷۸۹'[d]);
+const toEn = s => String(s).replace(/[۰-۹]/g, d => '۰۱۲۳۴۵۶۷۸۹'.indexOf(d));
+
+const state = { cat:'همه', sort:'popular', q:'', cart:[], coupon:null };
+const MAX_COUPON = { code:'HOME10', pct:10 };
+const FREE_SHIP = 20000000, SHIP_COST = 450000;
+
+/* ══════════════════════════════════════════════════════
+   ابزارها
+   ══════════════════════════════════════════════════════ */
+const $  = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+
+function toast(msg){
+  const t = document.createElement('div');
+  t.className = 'toast';
+  t.innerHTML = '<span>✓</span><span>' + msg + '</span>';
+  $('#toasts').appendChild(t);
+  requestAnimationFrame(()=>t.classList.add('show'));
+  setTimeout(()=>{ t.classList.remove('show'); setTimeout(()=>t.remove(),320); }, 2600);
+}
+
+/* ══════════════════════════════════════════════════════
+   رندر محصولات
+   ══════════════════════════════════════════════════════ */
+function cardHTML(p){
+  const off = p.old ? Math.round((1 - p.price/p.old) * 100) : 0;
+  return `<article class="card" data-id="${p.id}">
+    <div class="card-media" data-open="${p.id}">
+      ${p.badge ? `<span class="badge">${p.badge}</span>` : ''}
+      ${off ? `<span class="off">${fa(off)}٪ تخفیف</span>` : ''}
+      <div class="rug ${p.pattern}"></div>
+      <button class="quick" data-open="${p.id}">مشاهده سریع</button>
+    </div>
+    <div class="card-body">
+      <span class="card-cat">${p.cat}</span>
+      <h3>${p.name}</h3>
+      <div class="card-meta">${p.size} · ${p.material}</div>
+      <div class="card-rate">★ ${fa(p.rating)} <small>(${fa(p.reviews)} نظر)</small></div>
+      <div class="card-foot">
+        <div class="price">
+          ${p.old ? `<del>${fa(p.old)}</del>` : ''}
+          <b>${fa(p.price)} <small>تومان</small></b>
+        </div>
+        <button class="add" data-add="${p.id}" aria-label="افزودن ${p.name} به سبد">+</button>
+      </div>
+    </div>
+  </article>`;
+}
+
+function visibleProducts(){
+  let list = PRODUCTS.filter(p => {
+    const okCat = state.cat === 'همه' || p.cat === state.cat;
+    const q = state.q.trim();
+    const okQ = !q || p.name.includes(q) || p.cat.includes(q) || p.code.toLowerCase().includes(q.toLowerCase());
+    return okCat && okQ;
+  });
+  switch(state.sort){
+    case 'cheap':     list.sort((a,b)=>a.price-b.price); break;
+    case 'expensive': list.sort((a,b)=>b.price-a.price); break;
+    case 'rate':      list.sort((a,b)=>b.rating-a.rating); break;
+    default:          list.sort((a,b)=>b.reviews-a.reviews);
+  }
+  return list;
+}
+
+function renderProducts(){
+  const list = visibleProducts();
+  $('#productGrid').innerHTML = list.map(cardHTML).join('');
+  $('#emptyState').hidden = list.length > 0;
+}
+
+function renderChips(){
+  const cats = ['همه', ...new Set(PRODUCTS.map(p=>p.cat))];
+  $('#chips').innerHTML = cats.map(c =>
+    `<button class="chip${c === state.cat ? ' active' : ''}" data-cat="${c}">${c}</button>`
+  ).join('');
+}
+
+function renderCatTiles(){
+  const map = {
+    'تبریز':    {cls:'p5', sub:'ترنج، لچک و ظرافت ابریشم'},
+    'هریس':     {cls:'p3', sub:'هندسه جسور و رنگ‌های خاکی'},
+    'اردبیل':   {cls:'p7', sub:'بته‌جقه و نقش‌های سنتی'},
+    'آذربایجان':{cls:'p6', sub:'نقش‌های تصویری و کلکسیونی'}
+  };
+  $('#catTiles').innerHTML = Object.entries(map).map(([cat, m]) => {
+    const count = PRODUCTS.filter(p=>p.cat===cat).length;
+    return `<div class="cat" data-cat="${cat}">
+      <div class="cat-bg ${m.cls}"></div>
+      <span>${cat}<small>${m.sub} · ${fa(count)} فرش</small></span>
+    </div>`;
+  }).join('');
+}
+
+/* ══════════════════════════════════════════════════════
+   سبد خرید
+   ══════════════════════════════════════════════════════ */
+function saveCart(){ try{ localStorage.setItem('kf_cart', JSON.stringify(state.cart)); }catch(e){} }
+function loadCart(){
+  try{
+    const raw = JSON.parse(localStorage.getItem('kf_cart'));
+    if(Array.isArray(raw)) state.cart = raw.filter(i => byId(i.id) && i.qty > 0);
+  }catch(e){ state.cart = []; }
+}
+
+function cartCount(){ return state.cart.reduce((s,i)=>s+i.qty, 0); }
+function cartSubtotal(){
+  return state.cart.reduce((s,i)=>{ const p = byId(i.id); return p ? s + p.price*i.qty : s; }, 0);
+}
+function discount(){ return state.coupon ? Math.round(cartSubtotal() * state.coupon.pct / 100) : 0; }
+function shipping(){
+  const sub = cartSubtotal();
+  if(sub === 0) return 0;
+  return sub >= FREE_SHIP ? 0 : SHIP_COST;
+}
+function cartTotal(){ return Math.max(0, cartSubtotal() - discount() + shipping()); }
+
+function addToCart(id, qty=1){
+  const p = byId(id); if(!p) return;
+  const item = state.cart.find(i => i.id === Number(id));
+  if(item) item.qty += qty;
+  else state.cart.push({ id:Number(id), qty });
+  saveCart(); renderCart();
+  toast(`«${p.name}» به سبد خرید اضافه شد`);
+}
+
+function changeQty(id, delta){
+  const item = state.cart.find(i => i.id === Number(id)); if(!item) return;
+  item.qty += delta;
+  if(item.qty <= 0) state.cart = state.cart.filter(i => i.id !== Number(id));
+  saveCart(); renderCart();
+}
+
+function removeItem(id){
+  state.cart = state.cart.filter(i => i.id !== Number(id));
+  saveCart(); renderCart();
+}
+
+function renderCart(){
+  const body = $('#cartBody');
+  const count = cartCount();
+  $('#cartCount').textContent = fa(count);
+
+  if(state.cart.length === 0){
+    body.innerHTML = `<div class="cart-empty"><div>🛍</div>سبد خرید شما خالی است.<br>از فروشگاه، فرش دلخواهتان را انتخاب کنید.</div>`;
+  } else {
+    body.innerHTML = state.cart.map(i => {
+      const p = byId(i.id);
+      return `<div class="ci">
+        <div class="ci-rug ${p.pattern}"></div>
+        <div class="ci-info">
+          <b>${p.name}</b>
+          <small>${p.size} · ${p.material}</small>
+          <div class="ci-row">
+            <div class="qty">
+              <button data-dec="${p.id}" aria-label="کاهش">−</button>
+              <span>${fa(i.qty)}</span>
+              <button data-inc="${p.id}" aria-label="افزایش">+</button>
+            </div>
+            <span class="ci-price">${fa(p.price * i.qty)} تومان</span>
+          </div>
+        </div>
+        <button class="ci-del" data-del="${p.id}" aria-label="حذف">×</button>
+      </div>`;
+    }).join('');
+  }
+
+  const sub = cartSubtotal();
+  $('#sumSub').textContent = fa(sub) + ' تومان';
+  $('#sumShip').textContent = sub === 0 ? '—' : (shipping() === 0 ? 'رایگان' : fa(shipping()) + ' تومان');
+  $('#sumTotal').textContent = fa(cartTotal()) + ' تومان';
+
+  const d = discount();
+  $('#discRow').style.display = d > 0 ? 'flex' : 'none';
+  $('#sumDisc').textContent = '− ' + fa(d) + ' تومان';
+
+  $('#goCheckout').disabled = state.cart.length === 0;
+}
+
+/* ══════════════════════════════════════════════════════
+   مودال محصول
+   ══════════════════════════════════════════════════════ */
+let currentProduct = null;
+
+function openProduct(id){
+  const p = byId(id); if(!p) return;
+  currentProduct = p;
+  $('#pvRug').className = 'rug ' + p.pattern;
+  $('#pvCode').textContent = 'کد محصول: ' + p.code;
+  $('#pvTitle').textContent = p.name;
+  $('#pvDesc').textContent = p.desc;
+  $('#pvOrigin').textContent = p.origin;
+  $('#pvSize').textContent = p.size;
+  $('#pvMaterial').textContent = p.material;
+  $('#pvPrice').textContent = fa(p.price) + ' تومان';
+  $('#pvOld').textContent = p.old ? fa(p.old) + ' تومان' : '';
+  $('#pvWa').href = 'https://wa.me/989121234567?text=' + encodeURIComponent('سلام، درباره «' + p.name + '» با کد ' + p.code + ' راهنمایی می‌خواستم.');
+  openModal('#productModal');
+}
+
+/* ══════════════════════════════════════════════════════
+   مودال‌ها و لایه‌ها
+   ══════════════════════════════════════════════════════ */
+function openModal(sel){
+  $(sel).classList.add('open');
+  $(sel).setAttribute('aria-hidden','false');
+  $('#overlay').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+function closeModals(){
+  $$('.modal').forEach(m => { m.classList.remove('open'); m.setAttribute('aria-hidden','true'); });
+  $('#cartDrawer').classList.remove('open');
+  $('#cartDrawer').setAttribute('aria-hidden','true');
+  $('#overlay').classList.remove('show');
+  document.body.style.overflow = '';
+}
+
+/* ══════════════════════════════════════════════════════
+   نمایشگاه مجازی
+   ══════════════════════════════════════════════════════ */
+const stage = $('#stage'), track = $('#rollTrack');
+let offset = 0, startX = 0, startOffset = 0, dragging = false, moved = false;
+
+function buildRolls(){
+  const ids = [1,2,3,4,5,6,7];
+  track.innerHTML = ids.map((id, i) => {
+    const p = byId(id);
+    return `<button class="roll" data-id="${id}" aria-label="${p.name}">
+      <span class="roll-cap top"></span>
+      <span class="roll-body ${p.pattern}"></span>
+      <span class="roll-cap bottom"></span>
+      <span class="roll-tag">${faDigits(String(i+1).padStart(2,'0'))}</span>
+    </button>`;
+  }).join('');
+}
+
+function maxOffset(){
+  return Math.max(0, track.scrollWidth - stage.clientWidth);
+}
+
+function applyOffset(v, animate=true){
+  const max = maxOffset();
+  offset = Math.max(-max, Math.min(0, v));
+  track.style.transition = animate ? '' : 'none';
+  track.style.transform = `translateX(${offset}px)`;
+  const ratio = max === 0 ? 0 : -offset / max;
+  const num = Math.min(7, Math.max(1, Math.round(1 + ratio * 6)));
+  $('#counter').textContent = faDigits(String(num).padStart(2,'0'));
+}
+
+function moveBy(delta){ applyOffset(offset + delta); }
+
+$('#nextBtn').addEventListener('click', () => moveBy(-stage.clientWidth * 0.55));
+$('#prevBtn').addEventListener('click', () => moveBy(stage.clientWidth * 0.55));
+
+stage.addEventListener('pointerdown', e => {
+  dragging = true; moved = false;
+  startX = e.clientX; startOffset = offset;
+  stage.classList.add('dragging');
+  track.style.transition = 'none';
+});
+stage.addEventListener('pointermove', e => {
+  if(!dragging) return;
+  const dx = e.clientX - startX;
+  if(Math.abs(dx) > 6) moved = true;
+  const max = maxOffset();
+  offset = Math.max(-max, Math.min(0, startOffset + dx));
+  track.style.transform = `translateX(${offset}px)`;
+});
+function endDrag(){
+  if(!dragging) return;
+  dragging = false;
+  stage.classList.remove('dragging');
+  applyOffset(offset, true);
+  setTimeout(() => { moved = false; }, 80);
+}
+stage.addEventListener('pointerup', endDrag);
+stage.addEventListener('pointercancel', endDrag);
+stage.addEventListener('pointerleave', endDrag);
+window.addEventListener('resize', () => applyOffset(offset, false));
+
+/* ══════════════════════════════════════════════════════
+   شمارش معکوس
+   ══════════════════════════════════════════════════════ */
+function tickCountdown(){
+  const now = new Date();
+  const end = new Date(now); end.setHours(23,59,59,999);
+  let diff = Math.max(0, Math.floor((end - now)/1000));
+  const h = Math.floor(diff/3600), m = Math.floor(diff%3600/60), s = diff%60;
+  $('#cdH').textContent = faDigits(String(h).padStart(2,'0'));
+  $('#cdM').textContent = faDigits(String(m).padStart(2,'0'));
+  $('#cdS').textContent = faDigits(String(s).padStart(2,'0'));
+}
+
+/* ══════════════════════════════════════════════════════
+   تسویه حساب
+   ══════════════════════════════════════════════════════ */
+function renderCheckoutSummary(){
+  const sub = cartSubtotal(), d = discount(), sh = shipping();
+  $('#coSummary').innerHTML = `
+    <div class="sum-row"><span>جمع کالاها (${fa(cartCount())} قلم)</span><span>${fa(sub)} تومان</span></div>
+    ${d ? `<div class="sum-row disc"><span>تخفیف</span><span>− ${fa(d)} تومان</span></div>` : ''}
+    <div class="sum-row"><span>ارسال</span><span>${sh === 0 ? 'رایگان' : fa(sh) + ' تومان'}</span></div>
+    <div class="sum-row total"><span>قابل پرداخت</span><b>${fa(cartTotal())} تومان</b></div>`;
+}
+
+function openCheckout(){
+  if(state.cart.length === 0){ toast('سبد خرید شما خالی است'); return; }
+  renderCheckoutSummary();
+  $('#coForm').hidden = false;
+  $('#coSuccess').hidden = true;
+  $('#coErr').classList.remove('show');
+  openModal('#checkoutModal');
+}
+
+function placeOrder(){
+  const name = $('#fName').value.trim();
+  const phone = toEn($('#fPhone').value.trim());
+  const addr = $('#fAddr').value.trim();
+  const okName = name.length >= 3;
+  const okPhone = /^09\d{9}$/.test(phone);
+  const okAddr = addr.length >= 10;
+
+  if(!okName || !okPhone || !okAddr){
+    $('#coErr').classList.add('show');
+    return;
+  }
+  $('#coErr').classList.remove('show');
+
+  const code = 'KF-' + faDigits(String(Math.floor(10000 + Math.random()*90000)));
+  $('#orderCode').textContent = code;
+
+  state.cart = []; state.coupon = null;
+  saveCart(); renderCart();
+
+  $('#coForm').hidden = true;
+  $('#coSuccess').hidden = false;
+  toast('سفارش با موفقیت ثبت شد ✓');
+}
+
+/* ══════════════════════════════════════════════════════
+   اتصال رویدادها
+   ══════════════════════════════════════════════════════ */
+function bindEvents(){
+  /* گرید محصولات */
+  $('#productGrid').addEventListener('click', e => {
+    const addBtn = e.target.closest('[data-add]');
+    if(addBtn){
+      addToCart(addBtn.dataset.add);
+      addBtn.classList.add('done');
+      addBtn.textContent = '✓';
+      setTimeout(()=>{ addBtn.classList.remove('done'); addBtn.textContent = '+'; }, 1100);
+      return;
+    }
+    const opener = e.target.closest('[data-open]');
+    if(opener) openProduct(opener.dataset.open);
+  });
+
+  /* چیپ‌های دسته‌بندی */
+  $('#chips').addEventListener('click', e => {
+    const chip = e.target.closest('[data-cat]');
+    if(!chip) return;
+    state.cat = chip.dataset.cat;
+    renderChips(); renderProducts();
+  });
+
+  /* کاشی دسته‌بندی */
+  $('#catTiles').addEventListener('click', e => {
+    const tile = e.target.closest('[data-cat]');
+    if(!tile) return;
+    state.cat = tile.dataset.cat;
+    renderChips(); renderProducts();
+    $('#shop').scrollIntoView({behavior:'smooth'});
+  });
+
+  /* جستجو */
+  $('#searchInput').addEventListener('input', e => {
+    state.q = e.target.value;
+    renderProducts();
+    if(state.q.trim()) $('#shop').scrollIntoView({behavior:'smooth', block:'start'});
+  });
+
+  /* مرتب‌سازی */
+  $('#sortSel').addEventListener('change', e => {
+    state.sort = e.target.value;
+    renderProducts();
+  });
+
+  /* نمایشگاه مجازی */
+  track.addEventListener('click', e => {
+    if(moved) return;
+    const roll = e.target.closest('[data-id]');
+    if(roll) openProduct(roll.dataset.id);
+  });
+  $$('.hang').forEach(h => h.addEventListener('click', () => openProduct(h.dataset.id)));
+
+  /* سبد خرید */
+  $('#cartBtn').addEventListener('click', () => {
+    $('#cartDrawer').classList.add('open');
+    $('#cartDrawer').setAttribute('aria-hidden','false');
+    $('#overlay').classList.add('show');
+    document.body.style.overflow = 'hidden';
+  });
+  $('#cartClose').addEventListener('click', closeModals);
+  $('#overlay').addEventListener('click', closeModals);
+
+  $('#cartBody').addEventListener('click', e => {
+    const inc = e.target.closest('[data-inc]');
+    const dec = e.target.closest('[data-dec]');
+    const del = e.target.closest('[data-del]');
+    if(inc) changeQty(inc.dataset.inc, 1);
+    if(dec) changeQty(dec.dataset.dec, -1);
+    if(del) removeItem(del.dataset.del);
+  });
+
+  /* کد تخفیف */
+  $('#couponBtn').addEventListener('click', () => {
+    const val = $('#couponInput').value.trim().toUpperCase();
+    if(val === MAX_COUPON.code){
+      state.coupon = MAX_COUPON;
+      renderCart();
+      toast('کد تخفیف ۱۰٪ اعمال شد');
+    } else {
+      state.coupon = null;
+      renderCart();
+      toast('کد تخفیف نامعتبر است');
+    }
+  });
+
+  /* مودال‌ها */
+  $$('[data-close]').forEach(el => el.addEventListener('click', closeModals));
+  document.addEventListener('keydown', e => {
+    if(e.key === 'Escape'){ closeModals(); }
+  });
+
+  /* افزودن از مودال */
+  $('#pvAdd').addEventListener('click', () => {
+    if(!currentProduct) return;
+    addToCart(currentProduct.id);
+    closeModals();
+    $('#cartDrawer').classList.add('open');
+    $('#overlay').classList.add('show');
+    document.body.style.overflow = 'hidden';
+  });
+
+  /* تسویه */
+  $('#goCheckout').addEventListener('click', openCheckout);
+  $('#placeOrder').addEventListener('click', placeOrder);
+
+  /* خبرنامه */
+  $('#newsForm').addEventListener('submit', e => {
+    e.preventDefault();
+    toast('عضویت شما ثبت شد؛ خوش آمدید ✦');
+    e.target.reset();
+  });
+
+  /* منوی موبایل */
+  $('#menuBtn').addEventListener('click', () => {
+    const nav = $('.nav');
+    const isOpen = nav.style.display === 'flex';
+    nav.style.display = isOpen ? '' : 'flex';
+    nav.style.position = 'absolute';
+    nav.style.top = '100%';
+    nav.style.right = '0';
+    nav.style.left = '0';
+    nav.style.background = 'var(--surface)';
+    nav.style.flexDirection = 'column';
+    nav.style.padding = '16px 24px';
+    nav.style.gap = '14px';
+    nav.style.borderBottom = '1px solid var(--line)';
+    nav.style.boxShadow = '0 18px 30px rgba(58,40,24,.1)';
+    nav.style.zIndex = '55';
+  });
+}
+
+/* ══════════════════════════════════════════════════════
+   راه‌اندازی
+   ══════════════════════════════════════════════════════ */
+(function init(){
+  loadCart();
+  renderChips();
+  renderProducts();
+  renderCatTiles();
+  buildRolls();
+  renderCart();
+  bindEvents();
+  tickCountdown();
+  setInterval(tickCountdown, 1000);
+  setTimeout(() => applyOffset(0, false), 120);
+})();
+</script>
+</body>
+</html>

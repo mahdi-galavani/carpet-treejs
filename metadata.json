@@ -1,0 +1,8 @@
+{
+  "name": "خانه فرش",
+  "description": "فروشگاه آنلاین و نمایشگاه مجازی فرش دستباف ایرانی با ناوبری ساختاریافته و دسترسی‌پذیری استاندارد",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
